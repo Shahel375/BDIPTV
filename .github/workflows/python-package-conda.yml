@@ -47,6 +47,4 @@ jobs:
       - name: Pull latest changes from remote
         run: git pull origin main --rebase
 
-      - name: Push changes
-        run: git push origin main
 
