@@ -2,7 +2,7 @@ name: M3U Generator
 
 on:
   schedule:
-    - cron: '*/05 * * * *'  # Runs every 30 minutes
+    - cron: '*/30 * * * *'  # Runs every 30 minutes
   push:
     branches:
       - main  # Runs on push to the main branch
