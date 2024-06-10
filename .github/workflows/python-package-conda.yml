@@ -36,5 +36,16 @@ jobs:
         run: |
           chmod +x autorun.sh
           ./autorun.sh
+ - name: Commit changes if any
+        run: |
+          git config --global user.email "si3676640@gmail.com"
+          git config --global user.name "Shahel375"
+          git add -A
+          git diff --quiet && git diff --staged --quiet || git commit -m "M3U files updated by bot 🤖"
 
+      - name: Pull latest changes from remote
+        run: git pull origin main --rebase
+
+      - name: Push changes
+        run: git push origin main
 
