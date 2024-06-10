@@ -36,6 +36,7 @@ jobs:
         run: |
           chmod +x autorun.sh
           ./autorun.sh
+          
  - name: Commit changes if any
         run: |
           git config --global user.email "si3676640@gmail.com"
