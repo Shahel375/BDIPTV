@@ -36,7 +36,7 @@ jobs:
         run: |
           chmod +x autorun.sh
           ./autorun.sh
-          
+# All the links in this file are collected from public sources. If anyone wants to remove their source, please let us know. We respect your opinions and efforts.          
  - name: Commit changes if any
         run: |
           git config --global user.email "si3676640@gmail.com"
